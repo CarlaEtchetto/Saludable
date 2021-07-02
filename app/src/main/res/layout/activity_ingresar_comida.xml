@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".IngresarComida">
+
+    <Spinner
+        android:id="@+id/tipo_comida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/comida_ppal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/cuprum"
+        android:hint="Ingrese Plato Principal"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/comida_sria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/cuprum"
+        android:hint="Ingrese Plato Secundario"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/bebida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/cuprum"
+        android:hint="Ingrese Bebida"
+        android:inputType="textPersonName" />
+
+    <LinearLayout
+        android:id="@+id/postre_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cuprum"
+            android:text="¿Ingiero postre? "
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/sp_postre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/detalle_postre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/cuprum"
+            android:hint="Detalle Postre"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cuprum"
+        android:text="¿Tenía tentación de ingerir otro alimento?"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/sp_adicional"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/detalle_comida_adicional"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cuprum"
+        android:hint="Ingrese Comida Adicional"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cuprum"
+        android:text="¿Se quedo con hambre?"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/sp_satisfaccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       />
+
+    <Button
+        android:id="@+id/guardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cuprum"
+        android:text="guardar"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/gc_volver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:fontFamily="@font/cuprum"
+        android:text="volver"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
